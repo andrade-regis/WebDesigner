@@ -16,5 +16,232 @@
     </head>
     <body>
         <script src="js/scripts.js"></script>
+        <!--CONTEINER-->
+        <div class="containerd-flex align-items-center min-vh-100">
+            <div class="row g-0 justify-content0center">
+                <!--TÍTULO-->
+                <div class="col-lg-4 offset-lg-1 mx-0 px-0">                    
+                </div>
+                <!--FORMULÁRIO-->
+                <div class="col-lg-7 mx-0 px-0">
+                    <div class="progress">
+                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" 
+                        class="progress-bar progress-bar-striped progress-bar-animated bg-danger" 
+                        role="progressbar" style="width:0%">
+                        </div>
+                    </div>
+                    <div id="q-box-container">
+                        <form class="needs-validation" id="form-wrapper" method="post" 
+                        name="form-wrapper" novalidate="">
+                            <!--PASSOS AQUI-->
+                            <div class="steps-container">
+                                <div class="step">
+                                    <h4>Recentamente você teve contato próximo com alguém diagnosticado com COVID-19?</h4>
+                                    <div class="form-check ps-0 q-box">
+                                        <div class="q-box__question">
+                                            <input class="form-check-input question__input" id="q_1_yes" name="q_1" 
+                                            type="radio" value="Sim">
+                                            <label class="form-check-label question__label" for="q_1_yes">Sim</label>
+                                        </div>
+                                        <div class="q-box__question">
+                                            <input checked class="form-check-input question__input" id="q_1_no" name="q_1"
+                                            type="radio" value="Não">
+                                            <label class="form-check-label question__label" for="q_1_no">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h4>Você teve sintomas de febre, tosse seca, garganta inflamada ou perda do olfato/paladar?</h4>
+                                    <div class="form-check ps-0 q-box">
+                                        <div class="q-box__question">
+                                            <input class="form-check-input question__input" id="q_2_yes" name="q_2" 
+                                            type="radio" value="Sim">
+                                            <label class="form-check-label question__label" for="q_2_yes">Sim</label>
+                                        </div>
+                                        <div class="q-box__question">
+                                            <input checked class="form-check-input question__input" id="q_2_no" name="q_2"
+                                            type="radio" value="Não">
+                                            <label class="form-check-label question__label" for="q_2_no">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h4>Você teve diarréia dor de estômago, conjuntivite, vômito ou enxaqueca?</h4>
+                                    <div class="form-check ps-0 q-box">
+                                        <div class="q-box__question">
+                                            <input class="form-check-input question__input" id="q_3_yes" name="q_3" 
+                                            type="radio" value="Sim">
+                                            <label class="form-check-label question__label" for="q_3_yes">Sim</label>
+                                        </div>
+                                        <div class="q-box__question">
+                                            <input checked class="form-check-input question__input" id="q_3_no" name="q_3"
+                                            type="radio" value="Não">
+                                            <label class="form-check-label question__label" for="q_3_no">Não</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h4>Você viajou para algum país com grandes números de casos de COVID-19 nas últimas 2 semanas?</h4>
+                                    <divb class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-check ps-0 q-box">
+                                                <div class="q-box__question">
+                                                    <input class="form-check-input question__input q-checkbox" id="q_4_uk"
+                                                    name="q_4" type="checkbox" value="uk">
+                                                    <label class="form-check-label question__label" for="q_4_uk">Reino Unido</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check ps-0 q-box">
+                                                <div class="q-box__question">
+                                                    <input class="form-check-input question__input q-checkbox" id="q_4_us"
+                                                    name="q_4" type="checkbox" value="us">
+                                                    <label class="form-check-label question__label" for="q_4_us">Estados Unidos</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check ps-0 q-box">
+                                                <div class="q-box__question">
+                                                    <input class="form-check-input question__input q-checkbox" id="q_4_br"
+                                                    name="q_4" type="checkbox" value="br">
+                                                    <label class="form-check-label question__label" for="q_4_br">Brasil</label>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-check ps-0 q-box">
+                                                <div class="q-box__question">
+                                                    <input class="form-check-input question__input" id="q_4_de" name="q_4" 
+                                                    type="checkbox" value="de">
+                                                    <label clas="form-check-label question__label" for="q_4_de">Alemanhã</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check ps-0 q-box">
+                                                <div class="q-box__question">
+                                                    <input class="form-check-input question__input" id="q_4_in" name="q_4" 
+                                                    type="checkbox" value="in">
+                                                    <label clas="form-check-label question__label" for="q_4_in">Índia</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check ps-0 q-box">
+                                                <div class="q-box__question">
+                                                    <input class="form-check-input question__input" id="q_4_eu" name="q_4" 
+                                                    type="checkbox" value="eu">
+                                                    <label clas="form-check-label question__label" for="q_4_eu">Europa</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-check ps-0 q-box">
+                                                <div class="q-box__question">
+                                                    <input class="form-check-input question__input" id="q_4_none" name="q_4" 
+                                                    type="checkbox" value="none">
+                                                    <label clas="form-check-label question__label" for="q_4_none">Eu não viajei para nenhum desses países.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </divb>
+                                </div>
+                                <div class="step">
+                                    <h4>Você já experenciou algum dos sintomas anteriormente?</h4>
+                                    <div class="row">
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question">
+                                                <input class="form-check-input question__input" id="q_5_breathing" name="q_5_breathing"
+                                                type="checkbox" value="breathing">
+                                                <label class="form-check-label question__label" for="q_5_breathing">Dificuldade de respirar</label>
+                                             </div>
+                                        </div>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question">
+                                                <input class="form-check-input question__input" id="q_5_chest" name="q_5_chest"
+                                                type="checkbox" value="chest pain">
+                                                <label class="form-check-label question__label" for="q_5_chest">Dor ou Pressão no peito</label>
+                                             </div>
+                                        </div>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question">
+                                                <input class="form-check-input question__input" id="q_5_speech" name="q_5_speech"
+                                                type="checkbox" value="speech problem">
+                                                <label class="form-check-label question__label" for="q_5_speech">Perda da fala ou movimento</label>
+                                             </div>
+                                        </div>
+                                        <div class="form-check ps-0 q-box">
+                                            <div class="q-box__question">
+                                                <input class="form-check-input question__input" id="q_5_pale" name="q_5_pale"
+                                                type="checkbox" value="pale">
+                                                <label class="form-check-label question__label" for="q_5_pale">Pele, lábios ou unhas pálidos, acinzentados ou azuis</label>
+                                             </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h4>Nos informe seus dados pessoais:</h4>
+                                    <div class="mt-1">
+                                        <label class="form-label">Nome Completo:</label>
+                                        <input class="form-control" id="full_name" name="full_name" type="text">
+                                    </div>
+                                    <div class="mt-2">
+                                        <label class="form-label">Endereço Completo:</label>
+                                        <input class="form-control" id="address" name="address" type="text">
+                                    </div>
+                                    <div class="mt-2">
+                                        <label class="form-label">E-mail:</label>
+                                        <input class="form-control" id="email" name="email" type="text">
+                                    </div>
+                                    <div class="mt-2">
+                                        <label class="form-label">Phone/Mobile Number:</label>
+                                        <input class="form-control" id="phone" name="phone" type="text">
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-lg-2 col-md-2 col-3">
+                                            <label class="form-label">Age:</label>
+                                            <div class="input-container">
+                                                <input class="form-control" id="age" name="age" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div id="input-container">
+                                                <input class="form-check-input" name="gender" type="radio"
+                                                value="male">
+                                                <label class="form-check-label radio-lb">Homem</label>
+                                                <input class="form-check-input" name="gender" type="radio"
+                                                value="female">
+                                                <label class="form-check-label radio-lb">Mulher</label>
+                                                <input class="form-check-input" name="gender" type="radio"
+                                                value="indefinido">
+                                                <label class="form-check-label radio-lb">Prefiro não informar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="mt-1">
+                                        <div class="closing-text">
+                                            <h4>É sobre isso! Se mantenha saudável!</h4>
+                                            <p>Avaliaremos suas informações e informaremos em breve se você precisa fazer o teste para COVID-19</p>
+                                            <p>Click no botão Enviar para continuar.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="sucess">
+                                    <h4>Sucesso! Entraremos em contato com você o mais rápido possível!</h4>
+                                    <p>Enquanto isso, limpe as mãos com frequência, use água e sabão ou esfregue as mãos com álcool, mantenha uma distância segura de quem estiver tossindo ou espirrando e sempre use máscara quando o distanciamento físico não for possível.</p>
+                                    <a class="black-link" href="">Volte para o começo</a>
+                                </div>
+                            </div>
+                            <div id="q-box_button">
+                                <button id="prev-btn" type="button">Anterior</button>
+                                <button id="next-btn" type="button">Próximo</button>
+                                <button id="submit-btn" type="button">Enviar</button>
+                            </div>                            
+                        </form>
+                    </div>
+                </div>
+                <div id="preloader-wrapper">
+                    <div id="preloader"></div>
+                    <div class="preloader-section section-left"></div>
+                    <div class="preloader-section section-right"></div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
