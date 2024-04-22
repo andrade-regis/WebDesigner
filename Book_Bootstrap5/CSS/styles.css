@@ -317,6 +317,116 @@ input[type="radio"]:hover {
     z-index: 1001;
 }
 
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#preloader-wrapper .preloader-section {
+    width: 51%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #F7F9FF;
+    z-index: 1000;
+}
+
+#preloader-wrapper .preloader-section.section-left {
+    left: 0;    
+}
+
+#preloader-wrapper .preloader-section.section-right {
+    right: 0;    
+}
+
+.loaded #preloader-wrapper .preloader-section.section-left {
+    transform: translateX(-100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #preloader-wrapper .preloader-section.section-right {
+    transform: translateX(100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #preloader {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #preloader-wrapper {
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: all 0.3s 1s ease-out;
+}
+ 
+/* MEDIA QUERIES */
+
+@media (min-width: 990px) and (max-width:1199px) {
+    #title-container {
+        padding: 80px 28px 28px 28px;
+    }
+
+    #steps-container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 991px) {
+    #title-container {
+        padding: 30px;
+        min-height: inherit;
+    }
+}
+
+@media (max-width: 767px) {
+    #qbox-container {
+        padding: 30px;
+    }
+
+    #steps-container {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    #title-container {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 560px) {
+    #qbox-container {
+        padding: 40px;
+    }
+
+    #title-container {
+        padding-top: 45px;
+    }
+}
+
 
 
 
