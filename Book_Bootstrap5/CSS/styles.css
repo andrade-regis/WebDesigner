@@ -261,7 +261,7 @@ input[type="email"]:focus {
 .form-check-input:checked[type="radio"]:focus,
 .form-check-input:checked[type="radio"]:active {
     border: none !important;
-    -webkit-outline: 0px !important;
+    outline: 0px !important;
     box-shadow: none !important;
 }
 
